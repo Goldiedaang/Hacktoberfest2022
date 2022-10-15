@@ -14,7 +14,7 @@ vector<ll> countSort(vector<ll> arr)
     vector<ll> F(max + 1, 0);
     for (auto i : arr)
         F[i]++;
-    // Commulative
+    // Commulative additon
     for (int i = 1; i <= arr.size(); i++)
     {
         F[i] = F[i] + F[i - 1];
